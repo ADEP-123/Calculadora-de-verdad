@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalVerd</title>
+</head>
+
+<body>
+    <div id="calculadora">
+        <div id="tabIngres">
+            <input type="text" readonly id="tab_ing">
+            <button id="calc" data-value="calc">Calcular</button>
+        </div>
+        <div id="vaal_inc">
+            <label>Valor inicial de p</label>
+            <select id="valIncP">
+                <option value="verdad">Verdad</option>
+                <option value="falso">Falso</option>
+            </select>
+            <label>Valor inicial de q</label>
+            <select id="valIncQ">
+                <option value="verdad">Verdad</option>
+                <option value="falso">Falso</option>
+            </select>
+        </div>
+        <div id="teclado">
+            <button id="parentesis_ap" data-value="(">(</button>
+            <button id="parentesis_cier" data-value=")">)</button>
+            <button id="and" data-value="^">^</button>
+            <button id="or" data-value="v">v</button>
+            <button id="negacion" data-value="¬">¬</button>
+            <button id="op1" data-value="p">p</button>
+            <button id="op2" data-value="q">q</button>
+            <button id="del">←</button>
+            <button id="clear">Cl</button>
+        </div>
+    </div>
+    <script src="./js/logica.js"></script>
+</body>
+
+</html>
