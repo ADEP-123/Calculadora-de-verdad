@@ -26,29 +26,6 @@ p {
 
 }
 
-#calculadora {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#tab_ing {
-    font-size: 3vh;
-    height: 7vh;
-    max-width: 100%;
-    background-color: darkolivegreen;
-    font-family: 'Orbitron', sans-serif;
-    padding: 0;
-}
-
-
-#tabIngres {
-    padding: 0;
-    margin-bottom: 3vh;
-    width: 96%;
-}
-
 #vaal_inc {
     font-size: 3vh;
     display: flex;
@@ -69,33 +46,59 @@ p {
     font-size: 2vh;
 }
 
+#calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tab_ing {
+    font-size: 3vh;
+    height: 7vh;
+    width: 100%;
+    max-width: 100%;
+    background-color: darkolivegreen;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+}
+
+#tabIngres {
+    padding: 0;
+    margin-bottom: 3vh;
+    width: 96%;
+}
+
 #teclado {
     padding: 0;
     text-align: center;
     display: flex;
     width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .keyboard_button {
     justify-content: center;
-    margin-top: 0vh;
-    margin-bottom: 2vh;
-    padding: 3vh;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-size: 2vh;
     border-radius: 5px;
-    margin-left: 1vh;
-    margin-right: 1vh;
     background-color: gray;
+    width: 90%;
 }
 
 .espacio {
     display: flex;
     flex-direction: column;
     width: 33%;
+    align-items: center;
 }
 
 #calc {
-    height: 45%;
+    height: 50%;
     text-align: center;
     padding: 0;
 }
@@ -111,7 +114,18 @@ p {
     border-radius: 5%;
     padding: 2%;
     background-color: rgb(41, 41, 41);
-    width: 19vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 1150px) {
+    .dibujo {
+        width: 30vw;
+    }
+}
+@media (max-width: 900px) {
+    .dibujo {
+        width: 50vw;
+    }
 }
