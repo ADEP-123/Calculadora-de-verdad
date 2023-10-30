@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Condensed&display=swap');
+
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vh;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+#title {
+    text-align: center;
+    font-size: 6vh;
+    margin: 0;
+    color: blue;
+}
+
+#texto {
+    font-size: 3vh;
+    text-align: justify;
+    margin-left: 10vh;
+    margin-right: 10vh;
+
+}
+
+#calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tab_ing {
+    font-size: 3vh;
+    height: 7vh;
+    max-width: 100%;
+    background-color: darkolivegreen;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+}
+
+
+#tabIngres {
+    padding: 0;
+    margin-bottom: 3vh;
+    width: 96%;
+}
+
+#vaal_inc {
+    font-size: 3vh;
+    display: flex;
+}
+
+#valorP,
+#valorQ,
+#valorR {
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+#valIncP,
+#valIncQ,
+#valIncR {
+    border-radius: 5px;
+    margin: 2vh;
+    font-size: 2vh;
+}
+
+#teclado {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.keyboard_button {
+    justify-content: center;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+    padding: 3vh;
+    font-size: 2vh;
+    border-radius: 5px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    background-color: gray;
+}
+
+.espacio {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+#calc {
+    height: 45%;
+    text-align: center;
+    padding: 0;
+}
+
+.keyboard_button:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    cursor: pointer;
+}
+
+.dibujo {
+    border: 3px solid black;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: rgb(41, 41, 41);
+    width: 19vw;
+    display: flex;
+    flex-direction: column;
+}

@@ -4,39 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>CalVerd</title>
 </head>
 
 <body>
+
+    <h1 id="title">Calculadora tablas de verdad</h1>
+
+    <p id="texto"> Una herramienta poderosa para validar expresiones lógicas.
+        Ingresa tus proposiciones y operadores, y obtén los resultados de verdad en un abrir y cerrar de ojos. Esta
+        calculadora te ayudará a comprender la lógica detrás de tus expresiones y a verificar la veracidad de tus
+        argumentos. ¡Explora la lógica de manera fácil y eficiente!</p>
+
     <div id="calculadora">
-        <div id="tabIngres">
-            <input type="text" readonly id="tab_ing">
-            <button id="calc" data-value="calc">Calcular</button>
+
+        <div class="dibujo">
+            <div id="tabIngres">
+                <input type="text" readonly id="tab_ing">
+            </div>
+
+            <div id="teclado">
+
+                <div class="espacio">
+                    <button class="keyboard_button" id="op1" data-value="p">p</button>
+                    <button class="keyboard_button" id="op3" data-value="r">r</button>
+                    <button class="keyboard_button" id="or" data-value="v">v</button>
+                    <button class="keyboard_button" id="parentesis_ap" data-value="(">(</button>
+                </div>
+                <div class="espacio">
+                    <button class="keyboard_button" id="op2" data-value="q">q</button>
+                    <button class="keyboard_button" id="negacion" data-value="¬">¬</button>
+                    <button class="keyboard_button" id="and" data-value="^">^</button>
+                    <button class="keyboard_button" id="parentesis_cier" data-value=")">)</button>
+                </div>
+                <div class="espacio">
+                    <button class="keyboard_button" id="del" data-value="←">←</button>
+                    <button class="keyboard_button" id="clear" data-value="Clear">Clear</button>
+                    <button id="calc" data-value="calc" class="keyboard_button">Calcular</button>
+                </div>
+            </div>
         </div>
+
+
+
         <div id="vaal_inc">
-            <label>Valor inicial de p</label>
-            <select id="valIncP">
-                <option value="verdad">Verdad</option>
-                <option value="falso">Falso</option>
-            </select>
-            <label>Valor inicial de q</label>
-            <select id="valIncQ">
-                <option value="verdad">Verdad</option>
-                <option value="falso">Falso</option>
-            </select>
+            <div id="valorP">
+                <label>Valor inicial de p:</label>
+                <select id="valIncP">
+                    <option value="verdad">Verdad</option>
+                    <option value="falso">Falso</option>
+                </select>
+            </div>
+
+            <div id="valorQ">
+                <label>Valor inicial de q:</label>
+                <select id="valIncQ">
+                    <option value="verdad">Verdad</option>
+                    <option value="falso">Falso</option>
+                </select>
+            </div>
+
+            <div id="valorR">
+                <label>Valor inicial de r:</label>
+                <select id="valIncR">
+                    <option value="verdad">Verdad</option>
+                    <option value="falso">Falso</option>
+                </select>
+            </div>
         </div>
-        <div id="teclado">
-            <button id="parentesis_ap" data-value="(">(</button>
-            <button id="parentesis_cier" data-value=")">)</button>
-            <button id="and" data-value="^">^</button>
-            <button id="or" data-value="v">v</button>
-            <button id="negacion" data-value="¬">¬</button>
-            <button id="op1" data-value="p">p</button>
-            <button id="op2" data-value="q">q</button>
-            <button id="del">←</button>
-            <button id="clear">Cl</button>
+
+        <div>
+            <p id="respuesta"></p>
         </div>
     </div>
+
     <script src="./js/logica.js"></script>
 </body>
 
