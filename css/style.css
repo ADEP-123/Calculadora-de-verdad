@@ -126,12 +126,6 @@ p {
 }
 @media (max-width: 900px) {
     .dibujo {
-        width: 50vw;
-    }
-}
-
-@media (max-width: 600px) {
-    .dibujo {
         width: 70vw;
     }
 }
